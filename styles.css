@@ -1,13 +1,54 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34; /* Dark background for contrast */
 }
 
-#editor {
-    height: 100vh;
+#logo-container {
+    position: relative;
     width: 100%;
-    background-color: #282c34;
-    color: #ffffff;
-    padding: 10px;
-    font-family: 'Courier New', monospace;
+    height: 100%;
+}
+
+#logo-blank {
+    position: absolute;
+    width: 100vw; /* Full screen */
+    height: 100vh; /* Full screen */
+    animation: shrink-and-move 2s forwards;
+}
+
+#logo-with-text {
+    position: absolute;
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    opacity: 0; /* Start hidden */
+    top: calc(50% - 100px); /* Center vertically */
+    left: calc(50% - 100px); /* Center horizontally */
+}
+
+@keyframes shrink-and-move {
+    0% {
+        transform: scale(1); /* Start full size */
+    }
+    50% {
+        transform: scale(0.1); /* Shrink down */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.1); /* Move to center */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+    }
+}
+
+/* Show the second logo after the animation ends */
+@keyframes show-logo {
+    0% {
+        opacity: 0; /* Start hidden */
+    }
+    100% {
+        opacity: 1; /* Fade in */
+    }
 }
