@@ -1,132 +1,93 @@
-{
-    "restaurants": [
-        {
-            "name": "Raising Cane's",
-            "categories": [
-                {
-                    "type": "Sauces",
-                    "recipes": [
-                        {
-                            "name": "Raising Cane's Sauce",
-                            "image": "https://i0.wp.com/billypenn.com/wp-content/uploads/2022/08/raising...?fit=1200%2C675&ssl=1",
-                            "ingredients": [
-                                "1/2 cup of mayo",
-                                "1/4 cup of ketchup",
-                                "1 tablespoon of Worcestershire sauce",
-                                "1 teaspoon of garlic powder",
-                                "1 teaspoon of black pepper",
-                                "1 teaspoon of salt"
-                            ],
-                            "source": "https://www.alphafoodie.com/raising-canes-sauce-recipe/"
-                        }
-                    ]
-                },
-                {
-                    "type": "Entrees",
-                    "recipes": [
-                        {
-                            "name": "Raising Cane's Chicken Tenders",
-                            "image": "https://i.pinimg.com/474x/b5/01/a7/b501a724759b7c7053ed0b5d79c60496.jpg",
-                            "ingredients": [
-                                "1 lb chicken breast tenders",
-                                "1 cup buttermilk",
-                                "1 cup flour",
-                                "1 teaspoon salt",
-                                "1 teaspoon pepper",
-                                "1 teaspoon garlic powder",
-                                "1 teaspoon onion powder",
-                                "Oil for frying"
-                            ],
-                            "source": "https://copykat.com/raising-canes-chicken-tenders/"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Chick-fil-A",
-            "categories": [
-                {
-                    "type": "Sauces",
-                    "recipes": [
-                        {
-                            "name": "Chick-fil-A Sauce",
-                            "image": "https://www.thecookierookie.com/wp-content/uploads/2022/03/Chick-Fil-A-Sauce-6.jpg",
-                            "ingredients": [
-                                "1/2 cup mayonnaise",
-                                "1/4 cup honey",
-                                "2 tablespoons yellow mustard",
-                                "1 tablespoon BBQ sauce",
-                                "1 tablespoon lemon juice"
-                            ],
-                            "source": "https://www.thecookierookie.com/chick-fil-a-sauce/"
-                        }
-                    ]
-                },
-                {
-                    "type": "Entrees",
-                    "recipes": [
-                        {
-                            "name": "Chick-fil-A Chicken Sandwich",
-                            "image": "https://www.alyonascooking.com/wp-content/uploads/2020/04/chick-fil-a-chicken-sandwich-6.jpg",
-                            "ingredients": [
-                                "4 boneless chicken breasts",
-                                "1 cup pickle juice",
-                                "1 cup milk",
-                                "1 egg",
-                                "1 cup flour",
-                                "1 tablespoon powdered sugar",
-                                "Salt and pepper to taste",
-                                "Oil for frying",
-                                "4 buns",
-                                "Pickles"
-                            ],
-                            "source": "https://www.alyonascooking.com/chick-fil-a-chicken-sandwich/"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "McDonald's",
-            "categories": [
-                {
-                    "type": "Sauces",
-                    "recipes": [
-                        {
-                            "name": "Big Mac Sauce",
-                            "image": "https://www.thecookierookie.com/wp-content/uploads/2021/02/Big-Mac-Sauce-3.jpg",
-                            "ingredients": [
-                                "1/2 cup mayonnaise",
-                                "2 tablespoons French dressing",
-                                "1 tablespoon sweet pickle relish",
-                                "1 teaspoon white vinegar",
-                                "1 teaspoon sugar",
-                                "1/2 teaspoon onion powder",
-                                "Salt to taste"
-                            ],
-                            "source": "https://www.thecookierookie.com/big-mac-sauce/"
-                        }
-                    ]
-                },
-                {
-                    "type": "Entrees",
-                    "recipes": [
-                        {
-                            "name": "McDonald's French Fries",
-                            "image": "https://thebigmansworld.com/wp-content/uploads/2021/09/mcdonalds-french-fries-4.jpg",
-                            "ingredients": [
-                                "2 large russet potatoes",
-                                "2 tablespoons white sugar",
-                                "1 cup cold water",
-                                "Vegetable oil for frying",
-                                "Salt to taste"
-                            ],
-                            "source": "https://thebigmansworld.com/mcdonalds-french-fries/"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "title": "Raising Cane's Sauce",
+        "description": "A creamy, tangy sauce perfect for dipping.",
+        "image": "https://i0.wp.com/billypenn.com/wp-content/uploads/2022/08/raising-canes-sauce.jpg?fit=1200%2C675&ssl=1",
+        "ingredients": [
+            "1/2 cup of mayo",
+            "1/4 cup of ketchup",
+            "1 tablespoon of Worcestershire sauce",
+            "1 teaspoon of garlic powder",
+            "1 teaspoon of black pepper",
+            "1 teaspoon of salt"
+        ],
+        "source": "https://www.alphafoodie.com/raising-canes-sauce-recipe/"
+    },
+    {
+        "title": "Chick-fil-A Sauce",
+        "description": "The iconic Chick-fil-A sauce for sandwiches and more.",
+        "image": "https://www.thecookierookie.com/wp-content/uploads/2022/03/Chick-Fil-A-Sauce-6.jpg",
+        "ingredients": [
+            "1/2 cup mayo",
+            "1/4 cup honey",
+            "2 tablespoons yellow mustard",
+            "1 tablespoon BBQ sauce",
+            "1 tablespoon lemon juice"
+        ],
+        "source": "https://www.thecookierookie.com/chick-fil-a-sauce/"
+    },
+    {
+        "title": "Chick-fil-A Chicken Sandwich",
+        "description": "A crispy and juicy chicken sandwich.",
+        "image": "https://www.alyonascooking.com/wp-content/uploads/2020/04/chick-fil-a-chicken-sandwich-6.jpg",
+        "ingredients": [
+            "2 boneless chicken breasts",
+            "1 cup pickle juice",
+            "1 cup buttermilk",
+            "1 cup all-purpose flour",
+            "1 teaspoon paprika",
+            "Salt and pepper to taste",
+            "Buns and pickles for serving"
+        ],
+        "source": "https://www.alyonascooking.com/chick-fil-a-chicken-sandwich/"
+    },
+    {
+        "title": "McDonald's Big Mac",
+        "description": "The classic Big Mac burger with two beef patties.",
+        "image": "https://www.simplyrecipes.com/thmb/4GAcY1ALlmW9Q-aIUmCPM5WHoDs=/1500x0/filters:no_upscale%2Cmax_bytes(150000)%2Cquality(95)/Simply-Recipes-Big-Mac-LEAD-9-77a264802c624ef5921d81ff14b0f393.jpg",
+        "ingredients": [
+            "2 beef patties",
+            "1 sesame seed bun",
+            "Lettuce, cheese, pickles, and onions",
+            "Special sauce (mayonnaise, ketchup, relish)"
+        ],
+        "source": "https://www.simplyrecipes.com/recipes/big_mac/"
+    },
+    {
+        "title": "KFC Original Recipe Fried Chicken",
+        "description": "Crispy fried chicken with a secret blend of spices.",
+        "image": "https://www.kfc.com/assets/images/home/hero/website/kfc-fried-chicken.jpg",
+        "ingredients": [
+            "8 pieces of chicken",
+            "1 cup buttermilk",
+            "1 cup all-purpose flour",
+            "2 teaspoons salt",
+            "1 teaspoon pepper",
+            "1 teaspoon paprika"
+        ],
+        "source": "https://www.kfc.com/recipes/original-recipe"
+    },
+    {
+        "title": "Taco Bell Crunchy Tacos",
+        "description": "Crunchy taco shells filled with seasoned beef.",
+        "image": "https://www.tacobell.com/sites/default/files/2020-12/Taco-Bell-Crunchy-Taco.jpg",
+        "ingredients": [
+            "1 pound ground beef",
+            "1 packet taco seasoning",
+            "Taco shells",
+            "Lettuce, cheese, and tomatoes"
+        ],
+        "source": "https://www.tacobell.com/food/tacos/crunchy-taco"
+    },
+    {
+        "title": "Wendy's Frosty",
+        "description": "A rich and creamy dessert that’s perfect for any time.",
+        "image": "https://www.wendys.com/-/media/images/wendys/menu/desserts/wendys-frosty.jpg",
+        "ingredients": [
+            "1 cup vanilla ice cream",
+            "1 cup milk",
+            "1/4 cup chocolate syrup"
+        ],
+        "source": "https://www.wendys.com/en-us/menu/desserts/frosty"
+    }
+]
