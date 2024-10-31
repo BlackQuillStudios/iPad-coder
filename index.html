@@ -26,32 +26,44 @@
             font-size: 1.8em;
         }
 
-        /* Paragraph Styles */
-        p {
-            font-size: 1.2em;
-            margin: 10px 0;
+        /* Flex container for the image and ingredients */
+        .recipe-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
         }
 
         /* Image Styles */
-        img {
+        .recipe-container img {
             width: 300px;
             height: auto;
             border-radius: 10px;
-            margin: 20px 0;
         }
 
-        /* List Styles */
+        /* Ingredients Styles */
+        .ingredients {
+            text-align: left;
+        }
+
         ul {
             list-style-type: square;
             padding: 0;
-            margin: 20px auto;
-            width: 200px;
+            margin: 0;
             text-align: left;
         }
 
         li {
             font-size: 1.1em;
             margin: 5px 0;
+        }
+
+        /* Paragraph Styles */
+        .description {
+            font-size: 1.2em;
+            margin: 20px auto;
+            width: 80%;
         }
 
         /* Link Styles */
@@ -73,31 +85,32 @@
 </head>
 <body>
 
-    <!-- Headings -->
+    <!-- Recipe Title -->
     <h1>Mmmhhh Food</h1>
     <h2>Raising Cane's Sauce Recipe</h2>
 
-    <!-- Paragraphs -->
-    <p>This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries.</p>
-    <p>Follow the recipe below to make this tasty sauce at home. It's quick, easy, and only requires a few ingredients!</p>
+    <!-- Flex Container -->
+    <div class="recipe-container">
+        <!-- Image -->
+        <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
 
-    <!-- Image -->
-    <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
-    <p>An image of homemade Raising Cane's sauce in a small bowl.</p>
+        <!-- Ingredients List -->
+        <div class="ingredients">
+            <ul>
+                <li>1/2 cup of mayo</li>
+                <li>1/4 cup of ketchup</li>
+                <li>1 tablespoon of Worcestershire sauce</li>
+                <li>1 teaspoon of garlic powder</li>
+                <li>1 teaspoon of black pepper</li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- List -->
-    <ul>
-        <li>1/2 cup of mayo</li>
-        <li>1/4 cup of ketchup</li>
-        <li>1 tablespoon of Worcestershire sauce</li>
-        <li>1 teaspoon of garlic powder</li>
-        <li>1 teaspoon of black pepper</li>
-    </ul>
+    <!-- Description Paragraph -->
+    <p class="description">This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries. Follow the recipe above to make this tasty sauce at home. It's quick, easy, and only requires a few ingredients!</p>
 
-    <!-- Source -->
+    <!-- Source and Link -->
     <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" target="_blank">Source</a>
-
-    <!-- Hyperlink -->
     <a href="https://www.allrecipes.com/" target="_blank">Find more recipes here!</a>
 
 </body>
