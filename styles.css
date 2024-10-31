@@ -1,55 +1,53 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.5em;
+    color: #ff6347;
+}
+
+#recipes-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: #ffffff; /* White background for clean interface */
-    color: #333333;
+    gap: 20px;
 }
 
-.hidden {
-    display: none;
-}
-
-#homepage-container, #login-container {
-    text-align: center;
+.recipe-item {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
 }
 
-button {
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    width: 100%;
+.recipe-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-#continue-button {
-    background-color: #4CAF50; /* Green color for continue button */
+.recipe-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.signin-button {
-    background-color: #f1f1f1;
-    color: #333333;
-    border: 1px solid #dddddd;
-    padding: 10px;
+.recipe-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.ingredients {
+    font-size: 1em;
     margin-top: 10px;
-    width: 100%;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.divider {
-    margin: 20px 0;
-    font-size: 14px;
-    color: #888888;
 }
