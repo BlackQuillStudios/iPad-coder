@@ -1,81 +1,49 @@
-// Import the functions you need from the Firebase SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAuth, signInWithPopup, GoogleAuthProvider, OAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
+// Fetch and display recipes from recipes.json
+fetch('recipes.json')
+    .then(response => response.json())
+    .then(data => displayRecipes(data))
+    .catch(error => console.error('Error fetching recipes:', error));
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDv9tEMnEsLfh8rryhRG8WEpJfcfGZyE-8",
-  authDomain: "touchcode-7a444.firebaseapp.com",
-  projectId: "touchcode-7a444",
-  storageBucket: "touchcode-7a444.appspot.com",
-  messagingSenderId: "387147414469",
-  appId: "1:387147414469:web:cf255e870e2df23298a9ac",
-  measurementId: "G-Y3Q2KCWEJ6"
-};
+function displayRecipes(recipes) {
+    const container = document.getElementById('recipes-container');
+    recipes.forEach(recipe => {
+        const recipeItem = document.createElement('div');
+        recipeItem.classList.add('recipe-item');
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+        // Recipe header
+        const header = document.createElement('div');
+        header.classList.add('recipe-header');
 
-// Event listener for Start Coding button
-document.getElementById('start-button').addEventListener('click', () => {
-    document.getElementById('homepage-container').classList.add('hidden');
-    document.getElementById('login-container').classList.remove('hidden');
-});
+        const img = document.createElement('img');
+        img.src = recipe.image;
+        img.alt = recipe.name;
+        img.classList.add('recipe-image');
+        header.appendChild(img);
 
-// Google Sign-In
-document.getElementById('google-signin').addEventListener('click', () => {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
-        .then((result) => {
-            alert(`Welcome ${result.user.displayName}!`);
-            startCoding();
-        })
-        .catch((error) => {
-            console.error("Error during Google sign-in:", error);
+        const title = document.createElement('h2');
+        title.classList.add('recipe-title');
+        title.textContent = recipe.name;
+        header.appendChild(title);
+
+        recipeItem.appendChild(header);
+
+        // Ingredients
+        const ingredientsList = document.createElement('ul');
+        ingredientsList.classList.add('ingredients');
+        recipe.ingredients.forEach(ingredient => {
+            const listItem = document.createElement('li');
+            listItem.textContent = ingredient;
+            ingredientsList.appendChild(listItem);
         });
-});
+        recipeItem.appendChild(ingredientsList);
 
-// Apple Sign-In
-document.getElementById('apple-signin').addEventListener('click', () => {
-    const provider = new OAuthProvider('apple.com');
-    signInWithPopup(auth, provider)
-        .then((result) => {
-            alert(`Welcome ${result.user.displayName || "User"}!`);
-            startCoding();
-        })
-        .catch((error) => {
-            console.error("Error during Apple sign-in:", error);
-        });
-});
+        // Source Link
+        const sourceLink = document.createElement('a');
+        sourceLink.href = recipe.source;
+        sourceLink.textContent = 'Source';
+        sourceLink.target = '_blank';
+        recipeItem.appendChild(sourceLink);
 
-// Email/Password Sign-In
-document.getElementById('continue-button').addEventListener('click', () => {
-    const email = document.getElementById('email-or-phone').value;
-    const password = "password123";  // Replace this with an input field for passwords if needed
-
-    signInWithEmailAndPassword(auth, email, password)
-        .then((result) => {
-            alert(`Welcome back, ${result.user.email}!`);
-            startCoding();
-        })
-        .catch((error) => {
-            console.error("Error signing in with email and password:", error);
-            // If the user is not found, create a new account
-            createUserWithEmailAndPassword(auth, email, password)
-                .then((newUser) => {
-                    alert(`Account created! Welcome ${newUser.user.email}!`);
-                    startCoding();
-                })
-                .catch((error) => {
-                    console.error("Error creating user:", error);
-                });
-        });
-});
-
-// Function to proceed to the coding editor after login
-function startCoding() {
-    document.getElementById('login-container').classList.add('hidden');
-    // Here, you would load the coding editor or navigate to the main app page
-    alert("Ready to start coding!");
+        container.appendChild(recipeItem);
+    });
 }
