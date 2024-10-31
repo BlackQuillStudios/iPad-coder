@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Food Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Pacifico&display=swap" rel="stylesheet">
     <style>
         /* Body Styles */
         body {
@@ -27,18 +28,44 @@
         }
 
         /* Section Styles */
-        .restaurant-section {
+        .category-section {
             background-color: #fff;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
 
-        .restaurant-section h2 {
+        /* Category Title */
+        .category-title {
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6347;
+        }
+
+        /* Restaurant Title with Logo */
+        .restaurant-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .restaurant-title img {
+            height: 50px; /* Adjust logo size */
+        }
+
+        .raising-canes {
+            font-family: 'Carter One', sans-serif;
             color: #ff6347;
             font-size: 2em;
-            margin-bottom: 20px;
+        }
+
+        .chickfila {
+            font-family: 'Pacifico', sans-serif;
+            color: #e71d36;
+            font-size: 2em;
         }
 
         /* Flex Container for Recipe */
@@ -100,9 +127,15 @@
 <body>
 
     <div class="main-container">
-        <!-- Restaurant Section - Raising Cane's -->
-        <div class="restaurant-section">
-            <h2>Raising Cane's</h2>
+        <!-- Sauces Section -->
+        <div class="category-section">
+            <h2 class="category-title">Sauces</h2>
+
+            <!-- Restaurant Section - Raising Cane's -->
+            <div class="restaurant-title">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Raising_Cane%27s_logo.svg/1200px-Raising_Cane%27s_logo.svg.png" alt="Raising Cane's Logo">
+                <h3 class="raising-canes">Raising Cane's Sauce</h3>
+            </div>
             <div class="recipe-container">
                 <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
                 <div class="recipe-details">
@@ -118,11 +151,12 @@
                     <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" class="source-link" target="_blank">Source</a>
                 </div>
             </div>
-        </div>
 
-        <!-- Restaurant Section - Chick-fil-A -->
-        <div class="restaurant-section">
-            <h2>Chick-fil-A</h2>
+            <!-- Restaurant Section - Chick-fil-A -->
+            <div class="restaurant-title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chick-fil-A_logo.svg/1200px-Chick-fil-A_logo.svg.png" alt="Chick-fil-A Logo">
+                <h3 class="chickfila">Chick-fil-A Sauce</h3>
+            </div>
             <div class="recipe-container">
                 <img src="https://www.example.com/chickfila-sauce.jpg" alt="Homemade Chick-fil-A sauce">
                 <div class="recipe-details">
@@ -139,7 +173,11 @@
             </div>
         </div>
 
-        <!-- Additional Restaurant Sections here as needed -->
+        <!-- Food Section -->
+        <div class="category-section">
+            <h2 class="category-title">Food</h2>
+            <!-- Add your food recipes here, similar to the sauce section -->
+        </div>
     </div>
 
 </body>
