@@ -12,6 +12,14 @@
             color: #333;
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 800px;
+            width: 100%;
             text-align: center;
         }
 
@@ -33,6 +41,7 @@
             align-items: flex-start;
             gap: 20px;
             margin-top: 20px;
+            text-align: left;
         }
 
         /* Image Styles */
@@ -44,14 +53,15 @@
 
         /* Ingredients Styles */
         .ingredients {
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         ul {
             list-style-type: square;
             padding: 0;
             margin: 0;
-            text-align: left;
         }
 
         li {
@@ -62,8 +72,7 @@
         /* Paragraph Styles */
         .description {
             font-size: 1.2em;
-            margin: 20px auto;
-            width: 80%;
+            margin: 20px 0;
         }
 
         /* Link Styles */
@@ -85,33 +94,35 @@
 </head>
 <body>
 
-    <!-- Recipe Title -->
-    <h1>Mmmhhh Food</h1>
-    <h2>Raising Cane's Sauce Recipe</h2>
+    <div class="main-container">
+        <!-- Recipe Title -->
+        <h1>Mmmhhh Food</h1>
+        <h2>Raising Cane's Sauce Recipe</h2>
 
-    <!-- Flex Container -->
-    <div class="recipe-container">
-        <!-- Image -->
-        <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
+        <!-- Flex Container -->
+        <div class="recipe-container">
+            <!-- Image -->
+            <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
 
-        <!-- Ingredients List -->
-        <div class="ingredients">
-            <ul>
-                <li>1/2 cup of mayo</li>
-                <li>1/4 cup of ketchup</li>
-                <li>1 tablespoon of Worcestershire sauce</li>
-                <li>1 teaspoon of garlic powder</li>
-                <li>1 teaspoon of black pepper</li>
-            </ul>
+            <!-- Ingredients List -->
+            <div class="ingredients">
+                <ul>
+                    <li>1/2 cup of mayo</li>
+                    <li>1/4 cup of ketchup</li>
+                    <li>1 tablespoon of Worcestershire sauce</li>
+                    <li>1 teaspoon of garlic powder</li>
+                    <li>1 teaspoon of black pepper</li>
+                </ul>
+            </div>
         </div>
+
+        <!-- Description Paragraph -->
+        <p class="description">This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries. Follow the recipe above to make this tasty sauce at home. It's quick, easy, and only requires a few ingredients!</p>
+
+        <!-- Source and Link -->
+        <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" target="_blank">Source</a>
+        <a href="https://www.allrecipes.com/" target="_blank">Find more recipes here!</a>
     </div>
-
-    <!-- Description Paragraph -->
-    <p class="description">This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries. Follow the recipe above to make this tasty sauce at home. It's quick, easy, and only requires a few ingredients!</p>
-
-    <!-- Source and Link -->
-    <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" target="_blank">Source</a>
-    <a href="https://www.allrecipes.com/" target="_blank">Find more recipes here!</a>
 
 </body>
 </html>
