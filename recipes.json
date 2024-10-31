@@ -1,0 +1,31 @@
+[
+    {
+        "restaurant": "Raising Cane's",
+        "category": "Sauces",
+        "name": "Raising Cane's Sauce",
+        "image": "https://i0.wp.com/billypenn.com/wp-content/uploads/2022/08/raising...?fit=1200%2C675&ssl=1",
+        "ingredients": [
+            "1/2 cup of mayo",
+            "1/4 cup of ketchup",
+            "1 tablespoon of Worcestershire sauce",
+            "1 teaspoon of garlic powder",
+            "1 teaspoon of black pepper",
+            "1 teaspoon of salt"
+        ],
+        "source": "https://www.alphafoodie.com/raising-canes-sauce-recipe/"
+    },
+    {
+        "restaurant": "Chick-fil-A",
+        "category": "Sauces",
+        "name": "Chick-fil-A Sauce",
+        "image": "https://www.thecookierookie.com/wp-content/uploads/2022/03/Chick-Fil-A-Sauce-6.jpg",
+        "ingredients": [
+            "1/2 cup of mayo",
+            "1/4 cup of honey",
+            "2 tablespoons of mustard",
+            "1 tablespoon of BBQ sauce",
+            "1 teaspoon of lemon juice"
+        ],
+        "source": "https://www.thecookierookie.com/chick-fil-a-sauce/"
+    }
+]
