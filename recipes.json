@@ -15,17 +15,83 @@
         "source": "https://www.alphafoodie.com/raising-canes-sauce-recipe/"
     },
     {
+        "restaurant": "Raising Cane's",
+        "category": "Entrees",
+        "name": "Raising Cane's Chicken Tenders",
+        "image": "https://i.pinimg.com/474x/b5/01/a7/b501a724759b7c7053ed0b5d79c60496.jpg",
+        "ingredients": [
+            "1 lb chicken breast tenders",
+            "1 cup buttermilk",
+            "1 cup flour",
+            "1 teaspoon salt",
+            "1 teaspoon pepper",
+            "1 teaspoon garlic powder",
+            "1 teaspoon onion powder",
+            "Oil for frying"
+        ],
+        "source": "https://copykat.com/raising-canes-chicken-tenders/"
+    },
+    {
         "restaurant": "Chick-fil-A",
         "category": "Sauces",
         "name": "Chick-fil-A Sauce",
         "image": "https://www.thecookierookie.com/wp-content/uploads/2022/03/Chick-Fil-A-Sauce-6.jpg",
         "ingredients": [
-            "1/2 cup of mayo",
-            "1/4 cup of honey",
-            "2 tablespoons of mustard",
-            "1 tablespoon of BBQ sauce",
-            "1 teaspoon of lemon juice"
+            "1/2 cup mayonnaise",
+            "1/4 cup honey",
+            "2 tablespoons yellow mustard",
+            "1 tablespoon BBQ sauce",
+            "1 tablespoon lemon juice"
         ],
         "source": "https://www.thecookierookie.com/chick-fil-a-sauce/"
+    },
+    {
+        "restaurant": "Chick-fil-A",
+        "category": "Entrees",
+        "name": "Chick-fil-A Chicken Sandwich",
+        "image": "https://www.alyonascooking.com/wp-content/uploads/2020/04/chick-fil-a-chicken-sandwich-6.jpg",
+        "ingredients": [
+            "4 boneless chicken breasts",
+            "1 cup pickle juice",
+            "1 cup milk",
+            "1 egg",
+            "1 cup flour",
+            "1 tablespoon powdered sugar",
+            "Salt and pepper to taste",
+            "Oil for frying",
+            "4 buns",
+            "Pickles"
+        ],
+        "source": "https://www.alyonascooking.com/chick-fil-a-chicken-sandwich/"
+    },
+    {
+        "restaurant": "McDonald's",
+        "category": "Sauces",
+        "name": "Big Mac Sauce",
+        "image": "https://www.thecookierookie.com/wp-content/uploads/2021/02/Big-Mac-Sauce-3.jpg",
+        "ingredients": [
+            "1/2 cup mayonnaise",
+            "2 tablespoons French dressing",
+            "1 tablespoon sweet pickle relish",
+            "1 teaspoon white vinegar",
+            "1 teaspoon sugar",
+            "1/2 teaspoon onion powder",
+            "Salt to taste"
+        ],
+        "source": "https://www.thecookierookie.com/big-mac-sauce/"
+    },
+    {
+        "restaurant": "McDonald's",
+        "category": "Entrees",
+        "name": "McDonald's French Fries",
+        "image": "https://thebigmansworld.com/wp-content/uploads/2021/09/mcdonalds-french-fries-4.jpg",
+        "ingredients": [
+            "2 large russet potatoes",
+            "2 tablespoons white sugar",
+            "1 cup cold water",
+            "Vegetable oil for frying",
+            "Salt to taste"
+        ],
+        "source": "https://thebigmansworld.com/mcdonalds-french-fries/"
     }
 ]
