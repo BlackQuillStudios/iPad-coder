@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mmmhhh Food</title>
+    <title>Fast Food Recipes</title>
     <style>
         /* Body Styles */
         body {
@@ -14,78 +14,85 @@
             padding: 20px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         /* Main Container */
         .main-container {
-            max-width: 800px;
+            max-width: 1000px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Section Styles */
+        .restaurant-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
-        /* Heading Styles */
-        h1 {
+        .restaurant-section h2 {
             color: #ff6347;
-            font-size: 2.5em;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
-        h2 {
-            color: #ff4500;
-            font-size: 1.8em;
-        }
-
-        /* Flex container for the image and ingredients */
+        /* Flex Container for Recipe */
         .recipe-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: flex-start;
             gap: 20px;
-            margin-top: 20px;
+            flex-wrap: wrap;
             text-align: left;
         }
 
-        /* Image and Ingredients Widths */
+        /* Recipe Image */
         .recipe-container img {
-            width: 30%; /* Smaller image */
-            height: auto;
+            width: 35%;
             border-radius: 10px;
         }
 
-        .ingredients {
-            width: 65%; /* Wider ingredients section */
-            font-size: calc(1em + 1vw); /* Auto-scaling text */
+        /* Ingredients & Description */
+        .recipe-details {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        ul {
+        .recipe-details ul {
             list-style-type: square;
             padding: 0;
             margin: 0;
         }
 
-        li {
-            margin: 8px 0;
+        .recipe-details li {
+            font-size: 1.1em;
+            margin: 5px 0;
         }
 
-        /* Paragraph Styles */
-        .description {
-            font-size: calc(1em + 1vw); /* Auto-scaling text for the description */
-            margin: 20px 0;
+        .recipe-description {
+            font-size: 1.2em;
         }
 
         /* Link Styles */
-        a {
+        .source-link {
+            margin-top: 10px;
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            padding: 8px 15px;
             background-color: #ff6347;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
-            font-size: calc(1em + 0.5vw); /* Slightly smaller scaling for links */
         }
 
-        a:hover {
+        .source-link:hover {
             background-color: #ff4500;
         }
     </style>
@@ -93,34 +100,46 @@
 <body>
 
     <div class="main-container">
-        <!-- Recipe Title -->
-        <h1>Mmmhhh Food</h1>
-        <h2>Raising Cane's Sauce Recipe</h2>
-
-        <!-- Flex Container -->
-        <div class="recipe-container">
-            <!-- Image -->
-            <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
-
-            <!-- Ingredients List -->
-            <div class="ingredients">
-                <ul>
-                    <li>1/2 cup of mayo</li>
-                    <li>1/4 cup of ketchup</li>
-                    <li>1 tablespoon of Worcestershire sauce</li>
-                    <li>1 teaspoon of garlic powder</li>
-                    <li>1 teaspoon of black pepper</li>
-                    <li>1 teaspoon of salt</li>
-                </ul>
+        <!-- Restaurant Section - Raising Cane's -->
+        <div class="restaurant-section">
+            <h2>Raising Cane's</h2>
+            <div class="recipe-container">
+                <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
+                <div class="recipe-details">
+                    <ul>
+                        <li>1/2 cup of mayo</li>
+                        <li>1/4 cup of ketchup</li>
+                        <li>1 tbsp Worcestershire sauce</li>
+                        <li>1 tsp garlic powder</li>
+                        <li>1 tsp black pepper</li>
+                        <li>1 tsp salt</li>
+                    </ul>
+                    <p class="recipe-description">This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries.</p>
+                    <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" class="source-link" target="_blank">Source</a>
+                </div>
             </div>
         </div>
 
-        <!-- Description Paragraph -->
-        <p class="description">This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries. Follow the recipe above to make this tasty sauce at home. It's quick, easy, and only requires a few ingredients!</p>
+        <!-- Restaurant Section - Chick-fil-A -->
+        <div class="restaurant-section">
+            <h2>Chick-fil-A</h2>
+            <div class="recipe-container">
+                <img src="https://www.example.com/chickfila-sauce.jpg" alt="Homemade Chick-fil-A sauce">
+                <div class="recipe-details">
+                    <ul>
+                        <li>1/2 cup of mayo</li>
+                        <li>1/4 cup of honey</li>
+                        <li>2 tbsp yellow mustard</li>
+                        <li>1 tbsp BBQ sauce</li>
+                        <li>1 tsp lemon juice</li>
+                    </ul>
+                    <p class="recipe-description">Chick-fil-A’s signature sauce can be recreated at home with this blend of mayo, honey, mustard, BBQ, and lemon juice.</p>
+                    <a href="https://www.example.com/chickfila-sauce" class="source-link" target="_blank">Source</a>
+                </div>
+            </div>
+        </div>
 
-        <!-- Source and Link -->
-        <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" target="_blank">Source</a>
-        <a href="https://www.allrecipes.com/" target="_blank">Find more recipes here!</a>
+        <!-- Additional Restaurant Sections here as needed -->
     </div>
 
 </body>
