@@ -27,20 +27,13 @@
             gap: 30px;
         }
 
-        /* Section Styles */
-        .category-section {
+        /* Restaurant Section Styles */
+        .restaurant-section {
             background-color: #fff;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Category Title */
-        .category-title {
-            font-size: 1.8em;
             text-align: center;
-            margin-bottom: 20px;
-            color: #ff6347;
         }
 
         /* Restaurant Title with Logo */
@@ -68,6 +61,13 @@
             font-size: 2em;
         }
 
+        /* Subcategory Title */
+        .subcategory-title {
+            font-size: 1.6em;
+            color: #ff4500;
+            margin: 20px 0 10px;
+        }
+
         /* Flex Container for Recipe */
         .recipe-container {
             display: flex;
@@ -76,6 +76,7 @@
             gap: 20px;
             flex-wrap: wrap;
             text-align: left;
+            margin-bottom: 20px;
         }
 
         /* Recipe Image */
@@ -127,15 +128,15 @@
 <body>
 
     <div class="main-container">
-        <!-- Sauces Section -->
-        <div class="category-section">
-            <h2 class="category-title">Sauces</h2>
-
-            <!-- Restaurant Section - Raising Cane's -->
+        <!-- Raising Cane's Section -->
+        <div class="restaurant-section">
             <div class="restaurant-title">
-                <img src="https://www.google.com/imgres?q=raising%20cane%27s%20logo%20no%20text&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Finstagram%2Fraisingcanes%2Fprofile_pic.jpg&imgrefurl=https%3A%2F%2Fwww.instagram.com%2Fraisingcanes%2F&docid=A6kWmpngW2jWuM&tbnid=ChPlsCB3Jjbo4M&vet=12ahUKEwi4z7mI7riJAxU5SDABHRQYFEcQM3oECHMQAA..i&w=640&h=640&hcb=2&ved=2ahUKEwi4z7mI7riJAxU5SDABHRQYFEcQM3oECHMQAA" alt="Raising Cane's Logo">
-                <h3 class="raising-canes">Raising Cane's Sauce</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Raising_Cane%27s_logo.svg/1200px-Raising_Cane%27s_logo.svg.png" alt="Raising Cane's Logo">
+                <h2 class="raising-canes">Raising Cane's</h2>
             </div>
+
+            <!-- Sauces Subcategory -->
+            <h3 class="subcategory-title">Sauces</h3>
             <div class="recipe-container">
                 <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
                 <div class="recipe-details">
@@ -152,13 +153,35 @@
                 </div>
             </div>
 
-            <!-- Restaurant Section - Chick-fil-A -->
+            <!-- Food Subcategory -->
+            <h3 class="subcategory-title">Food</h3>
+            <div class="recipe-container">
+                <img src="https://example.com/canes-chicken.jpg" alt="Raising Cane's Chicken">
+                <div class="recipe-details">
+                    <ul>
+                        <li>Chicken breast strips</li>
+                        <li>Flour</li>
+                        <li>Egg wash</li>
+                        <li>Seasoned breadcrumbs</li>
+                        <li>Vegetable oil for frying</li>
+                    </ul>
+                    <p class="recipe-description">Make Raising Cane's famous crispy chicken fingers at home with a simple egg wash and breadcrumb coating.</p>
+                    <a href="https://www.example.com/canes-chicken" class="source-link" target="_blank">Source</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chick-fil-A Section -->
+        <div class="restaurant-section">
             <div class="restaurant-title">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chick-fil-A_logo.svg/1200px-Chick-fil-A_logo.svg.png" alt="Chick-fil-A Logo">
-                <h3 class="chickfila">Chick-fil-A Sauce</h3>
+                <h2 class="chickfila">Chick-fil-A</h2>
             </div>
+
+            <!-- Sauces Subcategory -->
+            <h3 class="subcategory-title">Sauces</h3>
             <div class="recipe-container">
-                <img src="https://www.example.com/chickfila-sauce.jpg" alt="Homemade Chick-fil-A sauce">
+                <img src="https://example.com/chickfila-sauce.jpg" alt="Homemade Chick-fil-A sauce">
                 <div class="recipe-details">
                     <ul>
                         <li>1/2 cup of mayo</li>
@@ -171,12 +194,23 @@
                     <a href="https://www.example.com/chickfila-sauce" class="source-link" target="_blank">Source</a>
                 </div>
             </div>
-        </div>
 
-        <!-- Food Section -->
-        <div class="category-section">
-            <h2 class="category-title">Food</h2>
-            <!-- Add your food recipes here, similar to the sauce section -->
+            <!-- Food Subcategory -->
+            <h3 class="subcategory-title">Food</h3>
+            <div class="recipe-container">
+                <img src="https://example.com/chickfila-chicken.jpg" alt="Chick-fil-A Chicken Sandwich">
+                <div class="recipe-details">
+                    <ul>
+                        <li>Chicken breast fillets</li>
+                        <li>Pickle juice for brining</li>
+                        <li>Buttermilk batter</li>
+                        <li>Seasoned flour</li>
+                        <li>Butter-toasted bun</li>
+                    </ul>
+                    <p class="recipe-description">Recreate Chick-fil-A's juicy chicken sandwich at home, brined in pickle juice for extra flavor.</p>
+                    <a href="https://www.example.com/chickfila-chicken" class="source-link" target="_blank">Source</a>
+                </div>
+            </div>
         </div>
     </div>
 
