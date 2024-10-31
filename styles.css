@@ -1,81 +1,63 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
+    color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #333;
+}
+
+.title {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    color: #e91e63;
+    margin: 0;
+}
+
+/* Restaurant Section Styles */
+.restaurant {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
-    margin: 20px 0;
-}
-
-#recipe-container {
-    width: 90%;
-    max-width: 1200px;
-}
-
-.restaurant-section {
-    margin-bottom: 40px;
-}
-
-.restaurant-section h2 {
-    font-size: 2em;
-    color: #444;
-    margin: 20px 0;
-    text-transform: capitalize;
-}
-
-.category-section {
-    margin: 20px 0;
-}
-
-.category-section h3 {
-    font-size: 1.5em;
-    color: #666;
-    text-transform: capitalize;
-}
-
-.recipe-card {
+.title-logo {
     display: flex;
-    margin: 15px 0;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
-.recipe-card img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    object-fit: cover;
+.title-logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.recipe-card .content {
-    flex: 1;
-}
-
-.recipe-card h4 {
-    font-size: 1.2em;
-    color: #333;
-    margin: 0;
-}
-
-.recipe-card p {
-    font-size: 0.9em;
+.recipe-category h3 {
+    font-size: 1.5em;
     color: #555;
+    margin: 10px 0;
 }
 
-.recipe-card ul {
+.recipe-category ul {
     list-style-type: disc;
-    margin: 10px 0;
     padding-left: 20px;
 }
 
-.recipe-card a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+.recipe-category li {
+    font-size: 1.1em;
+    margin: 5px 0;
 }
