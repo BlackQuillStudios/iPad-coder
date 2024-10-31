@@ -46,20 +46,20 @@
 
         /* Image and Ingredients Widths */
         .recipe-container img {
-            width: 35%; /* Reduced image size */
+            width: 30%; /* Smaller image */
             height: auto;
             border-radius: 10px;
         }
 
         .ingredients {
-            width: 60%; /* Increased text container width */
+            width: 65%; /* Wider ingredients section */
+            font-size: calc(1em + 1vw); /* Auto-scaling text */
         }
 
         ul {
             list-style-type: square;
             padding: 0;
             margin: 0;
-            font-size: 1.2em; /* Increased font size for ingredients */
         }
 
         li {
@@ -68,7 +68,7 @@
 
         /* Paragraph Styles */
         .description {
-            font-size: 1.3em; /* Increased description font size */
+            font-size: calc(1em + 1vw); /* Auto-scaling text for the description */
             margin: 20px 0;
         }
 
@@ -82,6 +82,7 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            font-size: calc(1em + 0.5vw); /* Slightly smaller scaling for links */
         }
 
         a:hover {
