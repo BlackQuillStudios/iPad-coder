@@ -4,212 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Food Recipes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
     <style>
-        /* Body Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #f4f4f9;
             color: #333;
             margin: 0;
             padding: 20px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* Main Container */
-        .main-container {
-            max-width: 1000px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        /* Restaurant Section Styles */
-        .restaurant-section {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        /* Restaurant Title with Logo */
+        .restaurant-section {
+            margin: 30px auto;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
         .restaurant-title {
+            font-family: 'Carter One', cursive;
+            font-size: 2.5em;
+            color: #e63946;
+        }
+        .item-section {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .restaurant-title img {
-            height: 50px; /* Adjust logo size */
-        }
-
-        .raising-canes {
-            font-family: 'Carter One', sans-serif;
-            color: #ff6347;
-            font-size: 2em;
-        }
-
-        .chickfila {
-            font-family: 'Pacifico', sans-serif;
-            color: #e71d36;
-            font-size: 2em;
-        }
-
-        /* Subcategory Title */
-        .subcategory-title {
-            font-size: 1.6em;
-            color: #ff4500;
-            margin: 20px 0 10px;
-        }
-
-        /* Flex Container for Recipe */
-        .recipe-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            flex-wrap: wrap;
+            margin: 20px 0;
             text-align: left;
-            margin-bottom: 20px;
         }
-
-        /* Recipe Image */
-        .recipe-container img {
-            width: 35%;
+        .item-section img {
+            width: 200px;
+            height: auto;
             border-radius: 10px;
+            margin-right: 20px;
         }
-
-        /* Ingredients & Description */
-        .recipe-details {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        .item-details {
+            flex-grow: 1;
         }
-
-        .recipe-details ul {
-            list-style-type: square;
+        h3 {
+            color: #333;
+        }
+        p {
+            font-size: 1em;
+        }
+        ul {
+            list-style-type: disc;
             padding: 0;
-            margin: 0;
+            margin: 10px 0;
         }
-
-        .recipe-details li {
-            font-size: 1.1em;
-            margin: 5px 0;
+        li {
+            font-size: 1em;
         }
-
-        .recipe-description {
-            font-size: 1.2em;
-        }
-
-        /* Link Styles */
         .source-link {
+            display: block;
             margin-top: 10px;
-            display: inline-block;
-            padding: 8px 15px;
-            background-color: #ff6347;
-            color: #fff;
+            color: #e63946;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .source-link:hover {
-            background-color: #ff4500;
         }
     </style>
 </head>
 <body>
 
-    <div class="main-container">
-        <!-- Raising Cane's Section -->
-        <div class="restaurant-section">
-            <div class="restaurant-title">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Raising_Cane%27s_logo.svg/1200px-Raising_Cane%27s_logo.svg.png" alt="Raising Cane's Logo">
-                <h2 class="raising-canes">Raising Cane's</h2>
-            </div>
-
-            <!-- Sauces Subcategory -->
-            <h3 class="subcategory-title">Sauces</h3>
-            <div class="recipe-container">
-                <img src="https://www.alphafoodie.com/wp-content/uploads/2022/12/Raising-Canes-Sauce-Recipe-square.jpeg" alt="Homemade Cane's sauce">
-                <div class="recipe-details">
-                    <ul>
-                        <li>1/2 cup of mayo</li>
-                        <li>1/4 cup of ketchup</li>
-                        <li>1 tbsp Worcestershire sauce</li>
-                        <li>1 tsp garlic powder</li>
-                        <li>1 tsp black pepper</li>
-                        <li>1 tsp salt</li>
-                    </ul>
-                    <p class="recipe-description">This homemade version of Raising Cane's sauce is a creamy, tangy delight that's perfect for dipping chicken fingers or fries.</p>
-                    <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" class="source-link" target="_blank">Source</a>
-                </div>
-            </div>
-
-            <!-- Food Subcategory -->
-            <h3 class="subcategory-title">Food</h3>
-            <div class="recipe-container">
-                <img src="https://example.com/canes-chicken.jpg" alt="Raising Cane's Chicken">
-                <div class="recipe-details">
-                    <ul>
-                        <li>Chicken breast strips</li>
-                        <li>Flour</li>
-                        <li>Egg wash</li>
-                        <li>Seasoned breadcrumbs</li>
-                        <li>Vegetable oil for frying</li>
-                    </ul>
-                    <p class="recipe-description">Make Raising Cane's famous crispy chicken fingers at home with a simple egg wash and breadcrumb coating.</p>
-                    <a href="https://www.example.com/canes-chicken" class="source-link" target="_blank">Source</a>
-                </div>
+    <div class="restaurant-section">
+        <h2 class="restaurant-title">Raising Cane's</h2>
+        
+        <div class="item-section">
+            <img src="https://i0.wp.com/billypenn.com/wp-content/uploads/2022/08/raising...?fit=1200%2C675&ssl=1" alt="Raising Cane's Tenders">
+            <div class="item-details">
+                <h3>Chicken Tenders</h3>
+                <p>These delicious homemade tenders are crispy on the outside, juicy on the inside, and served best with a dipping sauce.</p>
+                <ul>
+                    <li>Chicken breast</li>
+                    <li>Buttermilk</li>
+                    <li>Flour</li>
+                    <li>Salt</li>
+                    <li>Black pepper</li>
+                </ul>
+                <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" class="source-link" target="_blank">Source</a>
             </div>
         </div>
 
-        <!-- Chick-fil-A Section -->
-        <div class="restaurant-section">
-            <div class="restaurant-title">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chick-fil-A_logo.svg/1200px-Chick-fil-A_logo.svg.png" alt="Chick-fil-A Logo">
-                <h2 class="chickfila">Chick-fil-A</h2>
+        <div class="item-section">
+            <img src="https://i0.wp.com/billypenn.com/wp-content/uploads/2022/08/raising...?fit=1200%2C675&ssl=1" alt="Raising Cane's Sauce">
+            <div class="item-details">
+                <h3>Cane's Sauce</h3>
+                <p>This homemade version of Raising Cane's sauce is creamy, tangy, and perfect for dipping.</p>
+                <ul>
+                    <li>1/2 cup of mayo</li>
+                    <li>1/4 cup of ketchup</li>
+                    <li>1 tablespoon of Worcestershire sauce</li>
+                    <li>1 teaspoon of garlic powder</li>
+                    <li>1 teaspoon of black pepper</li>
+                    <li>1 teaspoon of salt</li>
+                </ul>
+                <a href="https://www.alphafoodie.com/raising-canes-sauce-recipe/" class="source-link" target="_blank">Source</a>
             </div>
+        </div>
+    </div>
 
-            <!-- Sauces Subcategory -->
-            <h3 class="subcategory-title">Sauces</h3>
-            <div class="recipe-container">
-                <img src="https://example.com/chickfila-sauce.jpg" alt="Homemade Chick-fil-A sauce">
-                <div class="recipe-details">
-                    <ul>
-                        <li>1/2 cup of mayo</li>
-                        <li>1/4 cup of honey</li>
-                        <li>2 tbsp yellow mustard</li>
-                        <li>1 tbsp BBQ sauce</li>
-                        <li>1 tsp lemon juice</li>
-                    </ul>
-                    <p class="recipe-description">Chick-fil-A’s signature sauce can be recreated at home with this blend of mayo, honey, mustard, BBQ, and lemon juice.</p>
-                    <a href="https://www.example.com/chickfila-sauce" class="source-link" target="_blank">Source</a>
-                </div>
-            </div>
+    <div class="restaurant-section">
+        <h2 class="restaurant-title">Chick-fil-A</h2>
 
-            <!-- Food Subcategory -->
-            <h3 class="subcategory-title">Food</h3>
-            <div class="recipe-container">
-                <img src="https://example.com/chickfila-chicken.jpg" alt="Chick-fil-A Chicken Sandwich">
-                <div class="recipe-details">
-                    <ul>
-                        <li>Chicken breast fillets</li>
-                        <li>Pickle juice for brining</li>
-                        <li>Buttermilk batter</li>
-                        <li>Seasoned flour</li>
-                        <li>Butter-toasted bun</li>
-                    </ul>
-                    <p class="recipe-description">Recreate Chick-fil-A's juicy chicken sandwich at home, brined in pickle juice for extra flavor.</p>
-                    <a href="https://www.example.com/chickfila-chicken" class="source-link" target="_blank">Source</a>
-                </div>
+        <div class="item-section">
+            <img src="https://www.thecookierookie.com/wp-content/uploads/2022/03/Chick-Fil-A-Sauce-6.jpg" alt="Chick-fil-A Sauce">
+            <div class="item-details">
+                <h3>Chick-fil-A Sauce</h3>
+                <p>This easy-to-make Chick-fil-A sauce is perfect for dipping nuggets, fries, or sandwiches.</p>
+                <ul>
+                    <li>1/2 cup mayonnaise</li>
+                    <li>2 tablespoons honey</li>
+                    <li>1 tablespoon yellow mustard</li>
+                    <li>1 tablespoon BBQ sauce</li>
+                    <li>1 teaspoon lemon juice</li>
+                </ul>
+                <a href="https://www.thecookierookie.com/chick-fil-a-sauce/" class="source-link" target="_blank">Source</a>
             </div>
         </div>
     </div>
